@@ -22,10 +22,6 @@
 #   - each line: <name>; <email>; <wphone>; <hphone>; <address>
 #   - e.g. Bilbo Baggins; bilbo@bagend.middle-earth; ; ; Bag End, Shire, Middle Earth
 #
-# CVS Details:
-# $Source: $
-# $Date:  $
-# $Revision: $
 #==============================================================
 
 import os, sys, string
