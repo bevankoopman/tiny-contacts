@@ -35,7 +35,17 @@ contactsFile = "/home/bevan/doc/contacts"
 
 def main():
 	global contactsFile, style
-	
+	 # use different contacts file
+        if "-f" in sys.argv:
+                try:
+                        contactsFile = sys.argv[sys.argv.index("-f")+1]
+                        # remove options from command line args
+                        del sys.argv[sys.argv.index("-f")+1]
+                        del sys.argv[sys.argv.index("-f")]
+                except IndexError:
+                        print "Error: No contact file specified"
+                        printUseage()
+
 	# print help
 	if "-h" in sys.argv or "-help" in sys.argv:
 		printUseage()
@@ -57,18 +67,6 @@ def main():
 		os.system("$EDITOR "+contactsFile)
 		return
 	
-	# use different contacts file
-	if "-f" in sys.argv:
-		try:
-			contactsFile = sys.argv[sys.argv.index("-f")+1]
-			# remove options from command line args
-			del sys.argv[sys.argv.index("-f")+1]
-			del sys.argv[sys.argv.index("-f")]
-		except IndexError:
-			print "Error: No contact file specified"
-			printUseage()
-	
-
 	# query contacts file
 	if len(sys.argv) > 1:
 		del sys.argv[0] # remove contact.py from command line args
