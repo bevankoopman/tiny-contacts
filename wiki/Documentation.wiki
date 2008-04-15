@@ -1,0 +1,25 @@
+#summary tiny-contacts documentation and user guide.
+
+= tiny-contacts Documentation =
+
+From the contacts source comments:
+
+{{{
+# Small script for managing list of personal contacts from a contacts text file.
+#
+# Usage: tiny-contacts.py [OPTIONS] QUERY1,...,N
+#   Options:
+#        -h or -help:    diplay usage information
+#        -s:             short listing of results (default)
+#        -l:             long listing of results
+#        -f :      use other contacts file
+#        -n:             input new contact
+#        -e:             open the contact file using $EDITOR
+#        -html:          Translate the contact document to HTML
+#        -abook:         output contact to pine address book format
+#
+# Format of contacts file:
+#   - single entry per line
+#   - each line: <name>; <email>; <wphone>; <hphone>; <address>
+#   - e.g. Bilbo Baggins; bilbo@bagend.middle-earth; ; ; Bag End, Shire, Middle Earth
+}}}
