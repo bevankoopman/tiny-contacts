@@ -9,10 +9,6 @@
 #
 # Usage: ldif2ct.py [OPTIONS] LDIF_FILE
 #
-# CVS Details:
-# $Source: $
-# $Date:  $
-# $Revision: $
 #==============================================================
 
 import sys, os
