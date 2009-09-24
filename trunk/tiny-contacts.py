@@ -1,4 +1,5 @@
 #!/usr/bin/env python
+# -*- coding: utf-8 -*-
 #
 # Title:        contacts.py
 # Author:       Bevan Koopman <bevan.koopman@gmail.com>
@@ -101,7 +102,10 @@ def query(keywords, style):
 		elif len(results) > 1:
 			print `len(results)`+" results found"
 	except IOError:
-		print "Could not access contacts file: "+contactsFile
+		answer = raw_input("Could not access contacts file: "+contactsFile+", would you like to create it? [y,n]:")
+		if answer == "y":
+			open(contactsFile, 'w');
+			print "Created new contacts file "+contactsFile
 
 def parseContact(line):
 	values = string.split(line[:-1], "; ")
