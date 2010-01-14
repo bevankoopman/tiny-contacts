@@ -1,5 +1,3 @@
-#summary tiny-contacts documentation and user guide.
-
 = tiny-contacts Documentation =
 
 From the contacts source comments:
