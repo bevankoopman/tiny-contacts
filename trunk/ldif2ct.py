@@ -7,7 +7,7 @@
 # Small script converting a LDIF addressbook to contacts format. Prints
 # the output to stdout.
 #
-# Usage: ldif2ct.py [OPTIONS] LDIF_FILE
+# Usage: ldif2ct.py LDIF_FILE
 #
 #==============================================================
 
