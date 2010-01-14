@@ -1,4 +1,5 @@
 #!/usr/bin/env python
+# -*- coding: utf-8 -*-
 #
 # Title:        ldif2ct.py
 # Author:       Bevan Koopman <bevan.koopman@gmail.com>
@@ -21,7 +22,7 @@ class Ldif2ct:
 		for line in fh:
 			split = line.split(":", 2)
 			if len(split) > 1:
-				contact[split[0].strip()] = split[1].strip()
+				contact[split[0].strip().lower()] = split[1].strip()
 			else:
 				contacts.append(Contact(contact))
 				contact = {}
@@ -37,11 +38,11 @@ class Contact:
 		self.data = data
 
 	def isPerson(self):
-		return ("givenName" in self.data) and ("sn" in self.data)
+		return ("givenname" in self.data) and ("sn" in self.data)
 
 	def getName(self):
 		if self.isPerson():
-			return self.data["givenName"]+" "+self.data["sn"]
+			return self.data["givenname"]+" "+self.data["sn"]
 
 	def getMail(self):
 		if "mail" in self.data:
@@ -53,13 +54,13 @@ class Contact:
 		numbers = ""
 		if "mobile" in self.data:
 			numbers = self.data["mobile"]
-		if "homePhone" in self.data:
-			numbers = numbers + ", " + self.data["homePhone"]
+		if "homephone" in self.data:
+			numbers = numbers + ", " + self.data["homephone"]
 		return numbers		
 	
 	def getWPhone(self):
-		if "telephoneNumber" in self.data:
-			return self.data["telephoneNumber"]
+		if "telephonenumber" in self.data:
+			return self.data["telephonenumber"]
 		else:
 			return ""
 
