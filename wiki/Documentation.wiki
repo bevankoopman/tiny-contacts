@@ -8,8 +8,8 @@ From the contacts source comments:
 # Usage: tiny-contacts.py [OPTIONS] QUERY1,...,N
 #   Options:
 #        -h or -help:    diplay usage information
-#        -s:             short listing of results (default)
-#        -l:             long listing of results
+#        -s:             short listing of results
+#        -l:             long listing of results (default)
 #        -f :            use other contacts file
 #        -n:             input new contact
 #        -e:             open the contact file using $EDITOR
