@@ -10,7 +10,7 @@ From the contacts source comments:
 #        -h or -help:    diplay usage information
 #        -s:             short listing of results (default)
 #        -l:             long listing of results
-#        -f :      use other contacts file
+#        -f :            use other contacts file
 #        -n:             input new contact
 #        -e:             open the contact file using $EDITOR
 #        -html:          Translate the contact document to HTML
