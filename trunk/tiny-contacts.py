@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 #
 # Title:        contacts.py
-# Author:       Bevan Koopman <bevan.koopman@gmail.com>
+# Author:       Bevan Koopman <bevan@koopman.id.au>
 # Created on:   May 7, 2004
 #
 # Small script for managing list of personal contacts from a contacts text file
@@ -10,8 +10,8 @@
 # Usage: contacts.py [OPTIONS] QUERY1,...,N
 #   Options:
 #        -h or -help:    diplay usage information
-#        -s:             short listing of results (default)
-#        -l:             long listing of results
+#        -s:             short listing of results
+#        -l:             long listing of results (default)
 #        -f <file>:      use other contacts file
 #        -n:             input new contact
 #        -e:             open the contact file using $EDITOR
