@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 #
-# Title:        contacts.py
+# Title:        tiny-contacts.py
 # Author:       Bevan Koopman <bevan@koopman.id.au>
 # Created on:   May 7, 2004
 #
